@@ -1,4 +1,5 @@
 import React from 'react'
+import cv from '../assets/images/CV_Eric Corral_Front_End.pdf'
 
 class AboutMe extends React.Component {
 
@@ -214,7 +215,7 @@ class AboutMe extends React.Component {
                         <li className="about-li">{this.state.textAbout[2]}<a className={aboutLink} href="https://www.efset.org/cert/GsPYh7" target="_blank" rel="noopener noreferrer">{this.state.textAbout[3]}</a></li>
                         <li className="about-li">{this.state.textAbout[4]}</li>
                         <li className="about-li">{this.state.textAbout[5]}</li>
-                        <li className="about-li">{this.state.textAbout[6]}<a className={aboutLink} href="assets/images/CV_Eric Corral_Front_End.pdf" download>{this.state.textAbout[7]}</a></li>
+                        <li className="about-li">{this.state.textAbout[6]}<a className={aboutLink} href={cv} download>{this.state.textAbout[7]}</a></li>
                     </ul>
 
                 </div>)
