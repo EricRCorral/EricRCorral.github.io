@@ -1,29 +1,28 @@
 {
   "files": {
     "main.css": "/static/css/main.7189bd8a.chunk.css",
-    "main.js": "/static/js/main.aaa3640c.chunk.js",
-    "main.js.map": "/static/js/main.aaa3640c.chunk.js.map",
+    "main.js": "/static/js/main.90d5c650.chunk.js",
+    "main.js.map": "/static/js/main.90d5c650.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.21e74043.js",
     "runtime-main.js.map": "/static/js/runtime-main.21e74043.js.map",
     "static/js/2.b715cdd5.chunk.js": "/static/js/2.b715cdd5.chunk.js",
     "static/js/2.b715cdd5.chunk.js.map": "/static/js/2.b715cdd5.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.b2b46af2fac3eee96ec3242db592764e.js": "/precache-manifest.b2b46af2fac3eee96ec3242db592764e.js",
+    "precache-manifest.8d55bd2590ea7228dceca4a64457c743.js": "/precache-manifest.8d55bd2590ea7228dceca4a64457c743.js",
     "service-worker.js": "/service-worker.js",
     "static/css/main.7189bd8a.chunk.css.map": "/static/css/main.7189bd8a.chunk.css.map",
     "static/js/2.b715cdd5.chunk.js.LICENSE.txt": "/static/js/2.b715cdd5.chunk.js.LICENSE.txt",
     "static/media/CV_Eric Corral_Front_End.pdf": "/static/media/CV_Eric Corral_Front_End.413ed2f5.pdf",
-    "static/media/cry-of-fear.png": "/static/media/cry-of-fear.29d91e93.png",
-    "static/media/gourmetaurant.png": "/static/media/gourmetaurant.4fba121b.png",
-    "static/media/images-firebase.png": "/static/media/images-firebase.179469ee.png",
-    "static/media/storelist.png": "/static/media/storelist.88af679a.png",
-    "static/media/template-plan-ford-ka.png": "/static/media/template-plan-ford-ka.906f88f7.png",
-    "static/media/tmdb.png": "/static/media/tmdb.0111a15d.png"
+    "static/media/cry-of-fear.jpg": "/static/media/cry-of-fear.e9fcc780.jpg",
+    "static/media/gourmetaurant.jpg": "/static/media/gourmetaurant.0780903c.jpg",
+    "static/media/images-firebase.jpg": "/static/media/images-firebase.f3307451.jpg",
+    "static/media/template-plan-ford-ka.jpg": "/static/media/template-plan-ford-ka.9e945398.jpg",
+    "static/media/tmdb.jpg": "/static/media/tmdb.6d8164bb.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.21e74043.js",
     "static/js/2.b715cdd5.chunk.js",
     "static/css/main.7189bd8a.chunk.css",
-    "static/js/main.aaa3640c.chunk.js"
+    "static/js/main.90d5c650.chunk.js"
   ]
 }
