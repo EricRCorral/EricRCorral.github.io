@@ -1,10 +1,10 @@
 import React from 'react'
-import storelist from '../assets/images/storelist.png'
-import fordKa from '../assets/images/template-plan-ford-ka.png'
-import gourmetaurant from '../assets/images/gourmetaurant.png'
-import cof from '../assets/images/cry-of-fear.png'
-import imgFirebase from '../assets/images/images-firebase.png'
-import tmdb from '../assets/images/tmdb.png'
+import storelist from '../assets/images/storelist.jpg'
+import fordKa from '../assets/images/template-plan-ford-ka.jpg'
+import gourmetaurant from '../assets/images/gourmetaurant.jpg'
+import cof from '../assets/images/cry-of-fear.jpg'
+import imgFirebase from '../assets/images/images-firebase.jpg'
+import tmdb from '../assets/images/tmdb.jpg'
 
 class Projects extends React.Component {
 
