@@ -1,0 +1,67 @@
+$box: 0px 0px 13px 0px rgba(0, 128, 0, 1);
+$box-alternate: 0px 0px 13px 0px rgba(0, 0, 0, 1);
+
+$border: solid #008000 3px;
+$border-alternate: solid #000000 3px;
+
+.card:hover {
+    -webkit-box-shadow: $box;
+    -moz-box-shadow: $box;
+    box-shadow: $box;
+}
+
+.img-size {
+    height: 200px;
+    cursor: pointer;
+}
+
+.card-content {
+    background-color: black !important;
+    border-bottom: $border;
+}
+
+.card-reveal {
+    background-color: black !important;
+    border: solid green 1px;
+}
+
+.project-link {
+    color: #00ca00;
+}
+
+.links-space {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+// ====== Alternate classes ======
+
+.card-alternate:hover {
+    -webkit-box-shadow: $box-alternate !important;
+    -moz-box-shadow: $box-alternate !important;
+    box-shadow: $box-alternate !important;
+}
+
+.card-content-alternate {
+    background-color: #e6e6e6 !important;
+    border-bottom: $border-alternate;
+}
+
+.card-reveal-alternate {
+    background-color: #e6e6e6 !important;
+    border: solid black 1px !important;
+}
+
+.project-link-alternate {
+    color: #0f4464b4 !important;
+}
+
+// ====== @media screen ======
+
+@media screen and (min-width: 600px) and (max-width: 992px) {
+
+    .img-size {
+        height: 300px;
+    }
+}

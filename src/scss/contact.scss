@@ -1,0 +1,84 @@
+@import 'skills.scss';
+
+.contact-box {
+    @extend .skill-box;
+    border-radius: 0px;
+    padding: 6vh 0px 4vh 4vh;
+}
+
+.input {
+    color: green !important;
+}
+
+.input::placeholder {
+    color: #00800080;
+}
+
+.contact-link {
+    color: green !important;
+}
+
+.submit-icon {
+    color: #000000cc !important;
+}
+
+.icon-contact {
+    text-align: center;
+    align-content: space-between;
+}
+
+.message {
+    margin-left: 0px !important;
+}
+
+.icon-margin {
+    margin-top: 15px;
+}
+
+// ====== Alternate classes ======
+
+.contact-box-alternate {
+    @extend .skill-box-alternate;
+    border-radius: 0px;
+    padding: 6vh 0px 4vh 4vh;
+}
+
+.input-alternate {
+    color: black !important;
+}
+
+.input-alternate::placeholder {
+    color: grey;
+}
+
+.contact-link-alternate {
+    color: black !important;
+}
+
+.submit-icon-alternate {
+    color: #ffffffcd !important;
+}
+
+//  ====== @media screen ======
+
+@media screen and (max-width: 600px) {
+    
+    .submit-icon {
+        margin-right: 5px;
+    }
+    
+    .icon-contact {
+        display: flex;
+        margin-top: 0px;
+        justify-content: space-around;
+        margin-bottom: 14px;
+    }
+
+    .contact-box, .contact-box-alternate {
+        padding: 3vh 1vh 0px 0px;
+    }
+
+    .icon-margin {
+        margin-top: 0px;
+    }
+}

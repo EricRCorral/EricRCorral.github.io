@@ -1,0 +1,24 @@
+.text-home {
+  text-align: center;
+  margin-top: 20vh;
+  font-size: 35px;
+  line-height: 12vh; }
+
+@keyframes blink {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+.blink {
+  animation: blink 1s steps(2) 0s infinite; }
+
+@media screen and (min-width: 600px) {
+  .text-home {
+    font-size: 40px;
+    line-height: 14vh; } }
+
+@media screen and (min-width: 992px) {
+  .text-home {
+    font-size: 70px;
+    line-height: 17vh; } }

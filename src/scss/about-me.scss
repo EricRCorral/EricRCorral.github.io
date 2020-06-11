@@ -1,0 +1,83 @@
+$bg-box-alternate: 0px 0px 14px 2px rgba(0, 0, 0, 0.75);
+
+$bg-box: 0px 0px 20px 2px rgba(0, 128, 0, 1);
+
+.about-title {
+    text-align: center;
+}
+
+.about-ul {
+    margin-block-end: 0px;
+}
+
+.about-li {
+    margin-top: 10px;
+}
+
+.about-link {
+    color: #00ca00;
+    font-weight: bold;
+}
+
+.photo {
+    font-size: 5px;
+    line-height: 0px;
+}
+
+.photo-right {
+    @extend .photo;
+    text-align: right;
+}
+
+.bg-photo {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+    width: 275px;
+    height: 332px;
+    padding: 0px;
+    -webkit-box-shadow: $bg-box;
+    -moz-box-shadow: $bg-box;
+    box-shadow: $bg-box;
+}
+
+// ====== Alternate classes ======
+.about-link-alternate {
+    color: #0f4464b4;
+    font-weight: bold;
+}
+
+.photo-alternate {
+    @extend .photo;
+    color: white;
+}
+
+.photo-right-alternate {
+    @extend .photo;
+    text-align: right;
+    color: white;
+}
+
+.bg-photo-alternate {
+    @extend .bg-photo;
+    -webkit-box-shadow: $bg-box-alternate;
+    -moz-box-shadow: $bg-box-alternate;
+    box-shadow: $bg-box-alternate;
+    background-color: black;
+    padding: 0px;
+}
+
+// ====== @media screen ======
+
+@media screen and (min-width: 600px) {
+    .about-ul {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .about-title {
+        font-size: 50px;
+        text-align: center;
+    }
+}

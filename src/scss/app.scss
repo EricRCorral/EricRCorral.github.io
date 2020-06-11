@@ -1,0 +1,119 @@
+#root {
+  min-height: 100vh;
+  font-size: 20px;
+  font-family: monospace;
+  color: green;
+  background-color: black;
+  transition: .5s linear;
+  padding-bottom: 15px;
+}
+
+.sidenav {
+  width: 100vw;
+  align-items: center;
+  background-color: #000000cd;
+}
+
+.sidenav-close {
+  font-size: 3.8vh;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 6.5vh;
+  margin-bottom: 6.5vh;
+  transition: linear .5s;
+  cursor: pointer;
+}
+
+.sidenav-close:hover {
+  color: #00b300;
+}
+
+.top-app {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 3vh;
+}
+
+.sidenav-trigger,
+.tint {
+  cursor: pointer;
+  transition: .5s;
+}
+
+// ===== Alternate classes ======
+
+.alternate-theme {
+  color: black !important;
+  background-color: #8d8d8d25 !important;
+}
+
+.sidenav-alternate {
+  @extend .sidenav;
+  background-color: #ebebebe6 !important;
+}
+
+.sidenav-close-alternate {
+  @extend .sidenav-close
+}
+
+.sidenav-close-alternate:hover {
+  color: #00000080 !important;
+}
+
+// ====== Animations ======
+
+@keyframes fadeIn {
+
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.fadeIn {
+  animation: fadeIn 1s ease 0s 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeOut {
+
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+.fadeOut {
+  animation: fadeOut 1s ease 0s 1;
+  animation-fill-mode: forwards;
+}
+
+// ====== @media screen ======
+
+@media screen and (max-height: 599px) {
+  #root {
+    font-size: 18px;
+  }
+}
+
+@media screen and (min-height: 600px) {
+  .sidenav-close {
+    margin-top: 7.5vh !important;
+    margin-bottom: 7.5vh !important;
+  }
+}
+
+@media screen and (min-width: 992px) {
+
+  .sidenav-trigger:hover,
+  .tint:hover {
+    transform: scale(1.1);
+  }
+}
