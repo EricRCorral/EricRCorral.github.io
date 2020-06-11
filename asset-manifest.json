@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.07533b95.chunk.css",
-    "main.js": "/static/js/main.394066dd.chunk.js",
-    "main.js.map": "/static/js/main.394066dd.chunk.js.map",
+    "main.css": "/static/css/main.7189bd8a.chunk.css",
+    "main.js": "/static/js/main.ee965b51.chunk.js",
+    "main.js.map": "/static/js/main.ee965b51.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.21e74043.js",
     "runtime-main.js.map": "/static/js/runtime-main.21e74043.js.map",
     "static/js/2.36dda8b5.chunk.js": "/static/js/2.36dda8b5.chunk.js",
     "static/js/2.36dda8b5.chunk.js.map": "/static/js/2.36dda8b5.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.4960d33aeffca2c8a4d55b8a324be92b.js": "/precache-manifest.4960d33aeffca2c8a4d55b8a324be92b.js",
+    "precache-manifest.c0a03af733107f0abd76f69ed3966bbf.js": "/precache-manifest.c0a03af733107f0abd76f69ed3966bbf.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.07533b95.chunk.css.map": "/static/css/main.07533b95.chunk.css.map",
+    "static/css/main.7189bd8a.chunk.css.map": "/static/css/main.7189bd8a.chunk.css.map",
     "static/js/2.36dda8b5.chunk.js.LICENSE.txt": "/static/js/2.36dda8b5.chunk.js.LICENSE.txt",
     "static/media/cry-of-fear.png": "/static/media/cry-of-fear.29d91e93.png",
     "static/media/gourmetaurant.png": "/static/media/gourmetaurant.4fba121b.png",
@@ -22,7 +22,7 @@
   "entrypoints": [
     "static/js/runtime-main.21e74043.js",
     "static/js/2.36dda8b5.chunk.js",
-    "static/css/main.07533b95.chunk.css",
-    "static/js/main.394066dd.chunk.js"
+    "static/css/main.7189bd8a.chunk.css",
+    "static/js/main.ee965b51.chunk.js"
   ]
 }
