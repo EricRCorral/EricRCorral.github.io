@@ -10,7 +10,8 @@
 .sidenav, .sidenav-alternate {
   width: 100vw;
   align-items: center;
-  background-color: #000000cd; }
+  background-color: #000000cd;
+  padding-bottom: 0px; }
 
 .sidenav-close, .sidenav-close-alternate {
   font-size: 3.8vh;
@@ -40,7 +41,8 @@
   background-color: #8d8d8d25 !important; }
 
 .sidenav-alternate {
-  background-color: #ebebebe6 !important; }
+  background-color: #ebebebe6 !important;
+  padding-bottom: 0px; }
 
 .sidenav-close-alternate:hover {
   color: #00000080 !important; }

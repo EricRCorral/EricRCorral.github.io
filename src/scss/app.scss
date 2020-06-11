@@ -12,6 +12,7 @@
   width: 100vw;
   align-items: center;
   background-color: #000000cd;
+  padding-bottom: 0px;
 }
 
 .sidenav-close {
@@ -51,6 +52,7 @@
 .sidenav-alternate {
   @extend .sidenav;
   background-color: #ebebebe6 !important;
+  padding-bottom: 0px;
 }
 
 .sidenav-close-alternate {
