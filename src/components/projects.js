@@ -4,7 +4,7 @@ import fordKa from '../assets/images/template-plan-ford-ka.jpg'
 import gourmetaurant from '../assets/images/gourmetaurant.jpg'
 import cof from '../assets/images/cry-of-fear.jpg'
 import imgFirebase from '../assets/images/images-firebase.jpg'
-import tmdb from '../assets/images/tmdb.jpg'
+import chiches from '../assets/images/chiches.jpg'
 
 class Projects extends React.Component {
 
@@ -37,13 +37,24 @@ class Projects extends React.Component {
                 repo: 'https://github.com/EricRCorral/StoreList'
             },
             {
+                image: chiches,
+                title: 'Chiches',
+                description: 'Varios pequeños chiches como una calculadora, un mini piano, un traductor a numeros romanos, un temporizador pomodoro y frases random.',
+                details: 'React y Materialize',
+                demo: 'https://ericrcorral.github.io/Chiches',
+                repo: 'https://github.com/EricRCorral/Chiches'
+            },
+            {
                 image: fordKa,
                 title: 'Plan Ford clon',
                 description: 'Replica de una pagina web de planes de ahorro, link a la pagina original en el footer del mismo.',
                 details: 'HTML, CSS y Javascript',
                 demo: 'https://ericrcorral.github.io/Ford-Ka-Replica/',
                 repo: 'https://github.com/EricRCorral/Ford-Ka-Replica'
-            },
+            }
+        ]
+
+        let projects2 = [
             {
                 image: gourmetaurant,
                 title: 'Gourmetaurant',
@@ -51,10 +62,7 @@ class Projects extends React.Component {
                 details: 'HTML y CSS.',
                 demo: 'https://ericrcorral.github.io/Gourmetaurant',
                 repo: 'https://github.com/EricRCorral/Gourmetaurant'
-            }
-        ]
-
-        let projects2 = [
+            },
             {
                 image: cof,
                 title: 'Cry of fear',
@@ -70,14 +78,6 @@ class Projects extends React.Component {
                 details: 'Angular 8, Cloud Firestore y Storage Firebase.',
                 demo: 'https://ericrcorral.github.io/ImagenesFirebase',
                 repo: 'https://github.com/EricRCorral/ImagenesFirebase'
-            },
-            {
-                image: tmdb,
-                title: 'MoviesApp',
-                description: 'App que consume la API de TMDB para obtener información de peliculas. Dispone de un buscador.',
-                details: 'Angular 8 y Bootstrap 4.',
-                demo: 'https://ericrcorral.github.io/TMovieDB-App/',
-                repo: 'https://github.com/EricRCorral/TMovieDB-App'
             }
         ]
 
