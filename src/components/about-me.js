@@ -1,5 +1,5 @@
 import React from 'react'
-import cv from '../assets/images/CV_Eric Corral_Front_End.pdf'
+import cv from '../assets/images/CV_EricCorral_Front_End.pdf'
 
 class AboutMe extends React.Component {
 
