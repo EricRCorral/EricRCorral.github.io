@@ -107,15 +107,15 @@ class Projects extends React.Component {
 
                                     <div className={cardReveal}>
 
-                                        <span className='card-title center-align'>{item.title}</span>
+                                        <div className='card-flex'>{item.title}<span className='card-title'><i className='fas fa-times right'></i></span></div>
 
-                                        <p>{item.description}</p>
+                                        <p className='card-description'>{item.description}</p>
 
                                         <p>Detalles técnicos: {item.details}</p>
 
                                         <div className="links-space">
-                                            <a href={item.demo} className={projectLink} rel="noopener noreferrer" target="_blank"><i className='fas fa-globe fa-2x'></i></a>
-                                            <a href={item.repo} className={projectLink} rel="noopener noreferrer" target="_blank"><i className='fab fa-github fa-2x'></i></a>
+                                            <a href={item.demo} className={projectLink} rel="noopener noreferrer" target="_blank">Sitio</a>
+                                            <a href={item.repo} className={projectLink} rel="noopener noreferrer" target="_blank">Repo</a>
                                         </div>
 
                                     </div>
@@ -144,13 +144,13 @@ class Projects extends React.Component {
 
                                         <span className='card-title center-align'>{item.title}</span>
 
-                                        <p>{item.description}</p>
+                                        <p className='card-description'>{item.description}</p>
 
                                         <p>Detalles técnicos: {item.details}</p>
 
                                         <div className="links-space">
-                                            <a href={item.demo} className={projectLink} rel="noopener noreferrer" target="_blank"><i className='fas fa-globe fa-2x'></i></a>
-                                            <a href={item.repo} className={projectLink} rel="noopener noreferrer" target="_blank"><i className='fab fa-github fa-2x'></i></a>
+                                            <a href={item.demo} className={projectLink} rel="noopener noreferrer" target="_blank">Sitio</a>
+                                            <a href={item.repo} className={projectLink} rel="noopener noreferrer" target="_blank">Repo</a>
                                         </div>
 
                                     </div>

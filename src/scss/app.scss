@@ -42,7 +42,7 @@
   transition: .5s;
 }
 
-// ===== Alternate classes ======
+// ====== Alternate classes ======
 
 .alternate-theme {
   color: black !important;
@@ -81,6 +81,11 @@
   animation-fill-mode: forwards;
 }
 
+.fadeInFast {
+  animation: fadeIn .3s ease 0s 1;
+  animation-fill-mode: forwards;
+}
+
 @keyframes fadeOut {
 
   0% {
@@ -94,6 +99,11 @@
 
 .fadeOut {
   animation: fadeOut 1s ease 0s 1;
+  animation-fill-mode: forwards;
+}
+
+.fadeOutFast {
+  animation: fadeOut .3s ease 0s 1;
   animation-fill-mode: forwards;
 }
 

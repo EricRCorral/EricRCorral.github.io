@@ -22,6 +22,8 @@ class App extends React.Component {
         this.navigate = this.navigate.bind(this);
         this.sidenav = this.sidenav.bind(this);
         this.alternateTheme = this.alternateTheme.bind(this);
+        this.equal = this.equal.bind(this);
+        this.equalCode = this.equalCode.bind(this);
     }
 
     async sidenav() {
@@ -104,6 +106,66 @@ class App extends React.Component {
 
     }
 
+    equal(event) {
+
+        let index = event.target.value;
+
+        let sidenavItem = this.state.sidenav.slice(0,);
+
+        const EQUALS = ['Inicio', 'Sobre mí', 'Aptitudes', 'Proyectos', 'Contacto', 'Cerrar'];
+
+        document.getElementsByClassName('sidenav-close').item(index).classList.add('fadeOutFast')
+
+        setTimeout(() => {
+
+            sidenavItem[index] = EQUALS[index];
+
+            this.setState({
+                sidenav: sidenavItem
+            })
+
+            document.getElementsByClassName('sidenav-close').item(index).classList.remove('fadeOutFast')
+
+            document.getElementsByClassName('sidenav-close').item(index).classList.add('fadeInFast')
+
+        }, 100);
+
+    };
+
+    equalCode(event) {
+
+        let index = event.target.value;
+
+        let sidenavItem = this.state.sidenav.slice(0,);
+
+        const EQUALSCODE = [
+            '<inicio>',
+            'id = "eric"',
+            'aptitudes()',
+            '/proyectos/ig',
+            'const ACTO',
+            '</cerrar>'
+        ];
+
+        document.getElementsByClassName('sidenav-close').item(index).classList.remove('fadeInFast')
+
+        document.getElementsByClassName('sidenav-close').item(index).classList.add('fadeOutFast')
+
+        setTimeout(() => {
+
+            sidenavItem[index] = EQUALSCODE[index];
+
+            this.setState({
+                sidenav: sidenavItem
+            })
+
+            document.getElementsByClassName('sidenav-close').item(index).classList.remove('fadeOutFast')
+
+            document.getElementsByClassName('sidenav-close').item(index).classList.add('fadeInFast')
+
+        }, 100);
+    }
+
     navigate(event) {
 
         event.persist()
@@ -180,7 +242,7 @@ class App extends React.Component {
 
                 <ul id="slide-out" className={sidenav}>
                     {this.state.sidenav.map((item, i) =>
-                        <li key={i} onClick={this.navigate} value={i} className={sidenavClose}>{item}</li>
+                        <li key={i} onMouseLeave={this.equalCode} onMouseEnter={this.equal} onClick={this.navigate} value={i} className={sidenavClose}>{item}</li>
                     )}
                 </ul>
 
@@ -203,10 +265,10 @@ class App extends React.Component {
 
                     <Skills show={this.state.show} alternate={alternate} />
 
-                    <Projects show={this.state.show} alternate={alternate}/>
+                    <Projects show={this.state.show} alternate={alternate} />
 
-                    <Contact show={this.state.show} alternate={alternate}/>
-        
+                    <Contact show={this.state.show} alternate={alternate} />
+
                 </div>
 
             </div>

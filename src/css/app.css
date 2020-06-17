@@ -57,6 +57,10 @@
   animation: fadeIn 1s ease 0s 1;
   animation-fill-mode: forwards; }
 
+.fadeInFast {
+  animation: fadeIn .3s ease 0s 1;
+  animation-fill-mode: forwards; }
+
 @keyframes fadeOut {
   0% {
     opacity: 1; }
@@ -65,6 +69,10 @@
 
 .fadeOut {
   animation: fadeOut 1s ease 0s 1;
+  animation-fill-mode: forwards; }
+
+.fadeOutFast {
+  animation: fadeOut .3s ease 0s 1;
   animation-fill-mode: forwards; }
 
 @media screen and (max-height: 599px) {

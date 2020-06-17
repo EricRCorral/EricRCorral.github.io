@@ -6594,6 +6594,10 @@ input[type=range]::-ms-thumb {
   animation: fadeIn 1s ease 0s 1;
   animation-fill-mode: forwards; }
 
+.fadeInFast {
+  animation: fadeIn .3s ease 0s 1;
+  animation-fill-mode: forwards; }
+
 @keyframes fadeOut {
   0% {
     opacity: 1; }
@@ -6602,6 +6606,10 @@ input[type=range]::-ms-thumb {
 
 .fadeOut {
   animation: fadeOut 1s ease 0s 1;
+  animation-fill-mode: forwards; }
+
+.fadeOutFast {
+  animation: fadeOut .3s ease 0s 1;
   animation-fill-mode: forwards; }
 
 @media screen and (max-height: 599px) {
@@ -6796,8 +6804,27 @@ input[type=range]::-ms-thumb {
   background-color: black !important;
   border: solid green 1px; }
 
+.card-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.5em;
+  font-weight: bold; }
+
+.card-description {
+  margin: 1.8em 0px; }
+
 .project-link {
-  color: #00ca00; }
+  color: green;
+  border: solid 2px green;
+  padding: 5px;
+  transition: .5s;
+  margin-top: .8em; }
+
+.project-link:hover {
+  background-color: #00ca00;
+  border: solid 2px #00ca00;
+  color: black; }
 
 .links-space {
   display: flex;
@@ -6818,7 +6845,16 @@ input[type=range]::-ms-thumb {
   border: solid black 1px !important; }
 
 .project-link-alternate {
-  color: #0f4464b4 !important; }
+  color: #0f4464b4 !important;
+  border: solid 2px #0f4464b4;
+  padding: 5px;
+  transition: .5s;
+  margin-top: .8em; }
+
+.project-link-alternate:hover {
+  color: #ffffffe6 !important;
+  background-color: #0f4464b4;
+  border: solid 2px #8d8d8d25; }
 
 @media screen and (min-width: 600px) and (max-width: 992px) {
   .img-size {
