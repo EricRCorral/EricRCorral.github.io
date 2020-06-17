@@ -6823,13 +6823,16 @@ input[type=range]::-ms-thumb {
 
 .project-link:hover {
   background-color: #00ca00;
-  border: solid 2px #00ca00;
+  border: solid 2px;
   color: black; }
 
 .links-space {
   display: flex;
   flex-direction: row;
   justify-content: space-around; }
+
+.project-github {
+  color: #00ca00; }
 
 .card-alternate:hover {
   -webkit-box-shadow: 0px 0px 13px 0px black !important;
@@ -6855,6 +6858,9 @@ input[type=range]::-ms-thumb {
   color: #ffffffe6 !important;
   background-color: #0f4464b4;
   border: solid 2px #8d8d8d25; }
+
+.project-github-alternate {
+  color: black; }
 
 @media screen and (min-width: 600px) and (max-width: 992px) {
   .img-size {

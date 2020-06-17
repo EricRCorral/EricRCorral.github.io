@@ -27,6 +27,8 @@ class Projects extends React.Component {
 
         let cardBox = (alternate) ? 'card card-alternate' : 'card'
 
+        let projectGithub = (alternate) ? 'project-github-alternate' : 'project-github'
+
         let projects1 = [
             {
                 image: storelist,
@@ -142,7 +144,7 @@ class Projects extends React.Component {
 
                                     <div className={cardReveal}>
 
-                                        <span className='card-title center-align'>{item.title}</span>
+                                        <div className='card-flex'>{item.title}<span className='card-title'><i className='fas fa-times right'></i></span></div>
 
                                         <p className='card-description'>{item.description}</p>
 
@@ -159,7 +161,7 @@ class Projects extends React.Component {
                         })}
                     </div>
 
-                    <div className='center-align'>¿Interesado/a en ver más ? Todos mis proyectos están en producción, toca al gatito para verlos <a className={projectLink} href="https://github.com/EricRCorral?tab=repositories" target="_blank" rel="noopener noreferrer"><i className='fab fa-github-alt'></i></a></div>
+                    <div className='center-align'>¿Interesado/a en ver más ? Todos mis proyectos están en producción, toca al gatito para verlos <a className={projectGithub} href="https://github.com/EricRCorral?tab=repositories" target="_blank" rel="noopener noreferrer"><i className='fab fa-github-alt'></i></a></div>
 
                 </div>
             )

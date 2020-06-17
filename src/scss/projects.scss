@@ -47,7 +47,7 @@ $border-alternate: solid #000000 3px;
 
 .project-link:hover {
     background-color: #00ca00;
-    border: solid 2px #00ca00;
+    border: solid 2px ;
     color: black;
 }
 
@@ -55,6 +55,10 @@ $border-alternate: solid #000000 3px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+}
+
+.project-github {
+    color: #00ca00;
 }
 
 // ====== Alternate classes ======
@@ -87,6 +91,10 @@ $border-alternate: solid #000000 3px;
     color: #ffffffe6 !important;
     background-color: #0f4464b4;
     border: solid 2px #8d8d8d25;
+}
+
+.project-github-alternate {
+    color: black;
 }
 
 // ====== @media screen ======
