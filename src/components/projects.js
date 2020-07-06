@@ -2,7 +2,7 @@ import React from 'react'
 import storelist from '../assets/images/storelist.jpg'
 import fordKa from '../assets/images/template-plan-ford-ka.jpg'
 import gourmetaurant from '../assets/images/gourmetaurant.jpg'
-import cof from '../assets/images/cry-of-fear.jpg'
+import fachashop from '../assets/images/facha-shop.jpg'
 import imgFirebase from '../assets/images/images-firebase.jpg'
 import chiches from '../assets/images/chiches.jpg'
 
@@ -47,16 +47,24 @@ class Projects extends React.Component {
                 repo: 'https://github.com/EricRCorral/Chiches'
             },
             {
+                image: fachashop,
+                title: 'FachaShop',
+                description: 'Modelo de una app E-Commerce con creación de usuario, buscador de ropa, filtros y carrito de compras.',
+                details: 'React y Styled Components',
+                demo: 'https://ericrcorral.github.io/FachaShop',
+                repo: 'https://github.com/EricRCorral/FachaShop'
+            }
+        ]
+
+        let projects2 = [
+            {
                 image: fordKa,
                 title: 'Plan Ford clon',
                 description: 'Replica de una pagina web de planes de ahorro, link a la pagina original en el footer del mismo.',
                 details: 'HTML, CSS y Javascript',
                 demo: 'https://ericrcorral.github.io/Ford-Ka-Replica/',
                 repo: 'https://github.com/EricRCorral/Ford-Ka-Replica'
-            }
-        ]
-
-        let projects2 = [
+            },
             {
                 image: gourmetaurant,
                 title: 'Gourmetaurant',
@@ -64,14 +72,6 @@ class Projects extends React.Component {
                 details: 'HTML y CSS.',
                 demo: 'https://ericrcorral.github.io/Gourmetaurant',
                 repo: 'https://github.com/EricRCorral/Gourmetaurant'
-            },
-            {
-                image: cof,
-                title: 'Cry of fear',
-                description: 'Template del sitio de un videojuego.',
-                details: 'HTML y CSS.',
-                demo: 'https://ericrcorral.github.io/CryOfFear',
-                repo: 'https://github.com/EricRCorral/CryOfFear'
             },
             {
                 image: imgFirebase,
