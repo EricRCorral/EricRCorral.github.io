@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "1ba9660eed272114db9c01f89f7e540c",
+    "revision": "82238a89174e7cd9b1a85520b44b854c",
     "url": "/index.html"
   },
   {
-    "revision": "28347b88152382cde664",
+    "revision": "122030de0d7502ac03c2",
     "url": "/static/css/main.a4bd1de3.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/js/2.b715cdd5.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "28347b88152382cde664",
-    "url": "/static/js/main.8b104511.chunk.js"
+    "revision": "122030de0d7502ac03c2",
+    "url": "/static/js/main.d1a6bb52.chunk.js"
   },
   {
     "revision": "6d30a0bf2de0f0f8d263",
@@ -32,8 +32,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/chiches.1d782223.jpg"
   },
   {
-    "revision": "e9fcc78093b7aa6d848411111f5173de",
-    "url": "/static/media/cry-of-fear.e9fcc780.jpg"
+    "revision": "e2ed5ea875f8fa374f61a221623a7cfc",
+    "url": "/static/media/facha-shop.e2ed5ea8.jpg"
   },
   {
     "revision": "0780903c7a9a8a046b6243676149e85e",
