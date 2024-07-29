@@ -1,0 +1,115 @@
+@use "../../variables.module";
+
+$panel-size: 6.5vw;
+
+#skills {
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--color-5);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  font-size: 0;
+  img {
+    width: 0;
+    height: 0;
+  }
+  .panel-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    max-width: 35vw;
+    text-align: center;
+    margin: 0 auto;
+    h1 {
+      width: 100%;
+      z-index: 10;
+      color: var(--color-1);
+      margin: 5px 0;
+      font-size: 32px;
+      text-shadow: variables.$Text-shadow-1;
+    }
+    .panel {
+      width: $panel-size;
+      height: $panel-size;
+      margin: 0 5px;
+      background-color: var(--color-1);
+      opacity: 0;
+      clip-path: polygon(
+        30% 0%,
+        70% 0%,
+        100% 30%,
+        100% 70%,
+        70% 100%,
+        30% 100%,
+        0% 70%,
+        0% 30%
+      );
+      img {
+        object-fit: cover;
+        width: calc($panel-size / 2);
+        height: calc($panel-size / 2);
+      }
+      &:hover {
+        .logo-container {
+          opacity: 0;
+        }
+        > :last-child {
+          opacity: 1;
+        }
+      }
+      * {
+        transition: 0.4s ease;
+      }
+      & .logo-container {
+        position: relative;
+        top: 25%;
+        left: 0%;
+      }
+      .skill-text {
+        position: relative;
+        top: -10%;
+        text-align: center;
+        opacity: 0;
+        font-size: 22px;
+        font-weight: 600;
+      }
+    }
+  }
+}
+
+@keyframes panelFadeIn {
+  from {
+    opacity: 0;
+    transform: scale(1.5);
+  }
+  to {
+    opacity: 0.9;
+    transform: scale(1);
+  }
+}
+
+@media screen and (max-width: variables.$MD) {
+  #skills .panel-container {
+    max-width: 75vw;
+    h1 {
+      font-size: 27px;
+    }
+    .panel {
+      width: 55px;
+      height: 55px;
+      margin: 5px;
+      img {
+        height: 30px;
+        width: 30px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: variables.$LG) {
+  #skills .panel-container .panel .skill-text {
+    font-size: 12px;
+  }
+}

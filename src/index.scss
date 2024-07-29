@@ -1,0 +1,33 @@
+@use "variables.module.scss";
+@use "animations.scss";
+@use "components/Sidebar/sidebar.scss";
+@use "components/AboutMe/about-me.scss";
+@use "components/Contact/contact.scss";
+@use "components/Experience/experience.scss";
+@use "components/Skills/skills.scss";
+@use "components/RandomSVGBackground/random-svg-bg.scss";
+
+@font-face {
+  font-family: "seiba-45";
+  src: url("./font/SDGlitch.otf");
+}
+
+* {
+  cursor: variables.$Default-cursor;
+}
+
+body {
+  margin: 0;
+  overflow-y: hidden;
+  color: var(--color-5);
+  animation: blurOpen 1.5s ease;
+  font-family: "seiba-45";
+  * {
+    text-shadow: variables.$Text-shadow-2;
+  }
+}
+
+::selection {
+  background-color: var(--color-5);
+  color: var(--color-1);
+}

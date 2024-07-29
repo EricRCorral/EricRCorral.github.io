@@ -1,0 +1,265 @@
+@use "../../variables.module";
+
+$cube-face-size: 80px;
+$cube-icon-size: 54px;
+$selector-transition: 0.2s ease;
+$centered-md: calc(50vw - $cube-face-size / 2);
+
+@mixin hover-theme {
+  border-bottom: 1px dotted var(--color-1);
+  clip-path: inset(0 0 0 0);
+  svg {
+    opacity: 0;
+  }
+  > div {
+    opacity: 1;
+  }
+}
+
+.sidebar {
+  position: fixed;
+  left: 20px;
+  top: 25vh;
+  z-index: 100;
+  @for $i from 4 through 7 {
+    > :nth-child(#{$i}) {
+      animation: cubeRollEntrance 1.5s ease, visibilityAnim 1.5s ease forwards;
+      animation-delay: #{calc($i / 2)}s;
+    }
+  }
+  .toggle {
+    display: none;
+  }
+}
+
+.language-selector {
+  position: relative;
+  top: -19vh;
+  display: flex;
+  color: var(--color-1);
+  padding: 3px 6px;
+  transition: $selector-transition;
+  cursor: variables.$Pointer;
+  overflow: hidden;
+  z-index: 3;
+  & * {
+    cursor: variables.$Pointer;
+  }
+  &:has(.left) {
+    clip-path: inset(0 40% 0 0);
+    transform: translateX(20%);
+  }
+  &:has(.right) {
+    clip-path: inset(0 0 0 40%);
+    transform: translateX(-20%);
+  }
+  &:hover {
+    background-color: var(--color-1);
+    color: var(--color-5);
+    clip-path: inset(0 0 0 0);
+    transform: translateX(0px);
+    h1 {
+      text-shadow: variables.$Text-shadow-2;
+    }
+    & .en {
+      border-right: 2px dashed var(--color-5);
+    }
+    & .es {
+      border-left: 2px dashed var(--color-5);
+    }
+  }
+  h1 {
+    font-weight: 400;
+    margin: 0;
+    width: 50%;
+    text-align: center;
+    transition: $selector-transition;
+    text-shadow: variables.$Text-shadow-1;
+    &.en {
+      position: relative;
+    }
+    &.es {
+      position: relative;
+      left: -2px;
+    }
+  }
+}
+
+.theme-selector {
+  position: absolute;
+  top: -24vh;
+  left: 0px;
+  display: flex;
+  width: $cube-face-size;
+  height: 28px;
+  padding: 2px 0;
+  clip-path: inset(0 20% 0 20%);
+  transition: $selector-transition;
+  &:hover {
+    @include hover-theme();
+  }
+  svg {
+    position: absolute;
+    left: calc(50% - 15px);
+    top: 1px;
+    width: 30px;
+    height: 30px;
+    fill: var(--color-1);
+  }
+  > div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    opacity: 0;
+    height: 32px;
+    padding: 0 4px;
+    :not(:first-child, :last-child) {
+      margin: 0 2px;
+    }
+    div {
+      width: 16px;
+      height: 16px;
+      cursor: variables.$Pointer;
+      transition: $selector-transition;
+      clip-path: polygon(
+        30% 0%,
+        70% 0%,
+        100% 30%,
+        100% 70%,
+        70% 100%,
+        30% 100%,
+        0% 70%,
+        0% 30%
+      );
+      &:hover {
+        transform: scale(1.2);
+      }
+    }
+  }
+}
+
+.cube {
+  width: $cube-face-size;
+  height: $cube-face-size;
+  fill: var(--color-1);
+  text-align: center;
+  transform-style: preserve-3d;
+  transition: 0.4s ease;
+  transform: translateX(0px);
+  visibility: hidden;
+  * {
+    cursor: variables.$Pointer;
+  }
+  svg {
+    width: $cube-icon-size;
+    height: $cube-icon-size;
+  }
+  &:not(:first-child) {
+    margin-top: 5px;
+  }
+  .face {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: $cube-face-size;
+    height: $cube-face-size;
+    text-shadow: variables.$Text-shadow-1;
+  }
+  .front {
+    transform: rotateY(0deg) translateZ(40px);
+    border: 1px solid var(--color-1);
+    transition: 1s ease;
+  }
+  & .highlight {
+    box-shadow: inset 0px 0px 3px 2px var(--color-1);
+    -webkit-box-shadow: inset 0px 0px 3px 2px var(--color-1);
+    -moz-box-shadow: inset 0px 0px 3px 2px var(--color-1);
+    svg {
+      filter: drop-shadow(0px 0px 2px var(--color-1));
+    }
+  }
+  .right {
+    transform: rotateY(90deg) translateZ(40px);
+    color: var(--color-1);
+    border: 1px solid var(--color-1);
+  }
+  &:hover {
+    transform: rotateY(-90deg);
+  }
+}
+
+@media screen and (max-width: variables.$LG) {
+  .sidebar {
+    left: -25vw;
+    &:not(.show) {
+      .cube,
+      .language-selector,
+      .theme-selector {
+        opacity: 0;
+      }
+    }
+    &.show {
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background-color: var(--color-5);
+      opacity: 0.9;
+      top: 0;
+      & .cube {
+        animation: none;
+        visibility: visible;
+        position: relative;
+        top: 15vh;
+        left: calc(50vw - $cube-face-size);
+        .right {
+          transform: rotateY(0deg) translateX(80px);
+        }
+      }
+      & .language-selector {
+        width: $cube-face-size;
+        left: 46vw;
+        top: 9vh;
+      }
+      & .theme-selector {
+        left: $centered-md;
+        top: 3vh;
+        @include hover-theme();
+      }
+    }
+    .toggle {
+      display: block;
+      width: 30px;
+      position: absolute;
+      top: -22vh;
+      left: 29vw;
+      fill: var(--color-1);
+    }
+  }
+}
+
+@media screen and (max-width: variables.$SM) {
+  .sidebar.show .language-selector {
+    left: 38vw;
+  }
+}
+
+@keyframes enIn {
+  from {
+    transform: translateY(-5vh);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes cubeRollEntrance {
+  from {
+    transform: translateX(-100px);
+  }
+  to {
+    transform: translateX(0px) rotateY(360deg);
+  }
+}

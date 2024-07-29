@@ -1,0 +1,12 @@
+export { default as AboutMeIcon } from "./AboutMeIcon";
+export { default as ContactIcon } from "./ContactIcon";
+export { default as SkillsIcon } from "./SkillsIcon";
+export { default as ExperienceIcon } from "./ExperienceIcon";
+export { default as Me } from "./Me";
+export { default as EmailIcon } from "./Email";
+export { default as GithubIcon } from "./Github";
+export { default as LinkedinIcon } from "./Linkedin";
+export { default as WhatsappIcon } from "./Whatsapp";
+export { default as SendIcon } from "./SendIcon";
+export { default as ThemeIcon } from "./ThemeIcon";
+export { default as MenuIcon } from "./MenuIcon";

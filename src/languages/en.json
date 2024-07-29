@@ -1,0 +1,64 @@
+{
+  "en": {
+    "translation": {
+      "sidebar": {
+        "about-me": "About me",
+        "experience": "Work experience",
+        "skills": "Skills",
+        "contact": "Contact"
+      },
+      "about-me": {
+        "text_1": "Hi!",
+        "text_2": "I am Eric, an experienced front end developer with more than 3 years of working experience located in Buenos Aires, Argentina.",
+        "text_3": "I has worked on E-commerce and cybersecurity projects with React and many libraries.",
+        "text_4": "I love create great user interfaces with clean and understable code. I am also an AI enthusiast.",
+        "text_5": "Scroll down to know more about me"
+      },
+      "experience": {
+        "role": "Role",
+        "project": "Project",
+        "task": "Task",
+        "stack": "Stack",
+        "temperies": {
+          "project": "Auth security dashboard manager",
+          "task_1": "Customize more than 40 rehusable components from two libraries",
+          "task_2": "Added TLS in development to make work the full Webauthn flow to add different devices and methods as authenticators.",
+          "task_3": "QR code to add TOTP as authentication method",
+          "task_4": "General bug fixing even some API endpoints",
+          "task_5": "Consume REST and GraphQL APIs. Creation of all models and resolvers for GraphQL",
+          "task_6": "Unit testing",
+          "task_7": "Code review",
+          "task_8": "Several code refactor",
+          "task_9": "Estimate task and plan quarters",
+          "stack": "React, Typescript, react-router, SaSS, Jest, React Testing Library, Mobx, Material UI, Blueprintjs, Framer motion, Nivo, i18next, react-qr-code, leaflet, Git"
+        },
+        "puzzle": {
+          "project": "E-commerce dashboard manager",
+          "task_1": "Develop features",
+          "task_2": "Bug fixing",
+          "task_3": "Consume GraphQL APIs",
+          "task_4": "Code review",
+          "task_5": "Daily and weekly meetings",
+          "stack": "React, Typescript, Nextjs, react-router, react-hook-form, Formik, Git"
+        }
+      },
+      "skills": {
+        "frontEnd": "Front end",
+        "testing": "Testing",
+        "machineLearning": "Machine learning",
+        "versionControl": "Version control"
+      },
+      "contact": {
+        "getInTouch": "Get in touch",
+        "nameLabel": "Name",
+        "emailLabel": "Email",
+        "messageLabel": "Message",
+        "namePlaceholder": "Your name",
+        "emailPlaceholder": "Your email",
+        "messagePlaceholder": "Something you want to tell me",
+        "footerText": "With love and code by Eric C."
+      },
+      "job_title": "Front end developer"
+    }
+  }
+}

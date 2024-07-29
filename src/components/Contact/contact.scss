@@ -1,0 +1,347 @@
+@use "../../variables.module";
+
+$disabled-button: #8080803b;
+
+@mixin input-common-styles {
+  background-color: transparent;
+  border: 3px solid var(--color-5);
+  color: var(--color-5);
+  font-family: "seiba-45";
+  transition: 0.3s ease;
+  font-size: 20px;
+  padding: 10px;
+  &::placeholder {
+    color: var(--color-3);
+    opacity: 0.6;
+  }
+  &:focus-visible {
+    border: 3px solid var(--color-5);
+    outline: none;
+  }
+}
+
+#contact {
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--color-4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .get-in-touch-container {
+    height: 100vh;
+    width: 7vw;
+    background-color: var(--color-1);
+    margin-right: 10px;
+    display: flex;
+    z-index: 5;
+    opacity: 1;
+    animation: slideToTop 0.7s ease forwards;
+    h1 {
+      transform: rotate(-180deg);
+      font-size: 100px;
+      writing-mode: vertical-lr;
+      margin: auto;
+      animation: getInTouchAnim 0.5s linear 0.7s forwards;
+      &.sm {
+        font-size: 80px;
+      }
+    }
+  }
+
+  .no-display {
+    display: none;
+    &.contact-form {
+      width: 40vw;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      z-index: 3;
+      opacity: 1;
+      background-color: var(--color-1);
+      padding: 0px 20px;
+      visibility: hidden;
+      animation: formEntrance 1s ease 0.7s forwards,
+        visibilityAnim 0.1s 0.7s forwards, formOpacity 1s 2s forwards;
+      .inputs-container {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 5vh;
+        margin-bottom: -15vh;
+        h2 {
+          width: fit-content;
+          font-size: 30px;
+          margin: 0 0 15px 0;
+        }
+        div {
+          width: 45%;
+          input {
+            width: 85%;
+            height: 10px;
+            @include input-common-styles();
+          }
+        }
+      }
+      .text-area-container {
+        display: flex;
+        align-items: end;
+        > :first-child {
+          width: 100%;
+        }
+        h2 {
+          margin: 60px 0 15px;
+          font-size: 40px;
+        }
+        textarea {
+          width: calc(100% - 40px);
+          height: 42vh;
+          resize: none;
+          @include input-common-styles();
+        }
+        .send-button {
+          border: 3px solid var(--color-5);
+          margin-left: 6px;
+          width: 15%;
+          height: calc(42vh + 20px);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          transition: 0.4s ease;
+          cursor: variables.$Pointer;
+          & * {
+            cursor: variables.$Pointer;
+          }
+          svg {
+            width: 60px;
+            height: 60px;
+            fill: var(--color-5);
+          }
+          &:hover {
+            background-color: var(--color-5);
+            svg {
+              fill: var(--color-1);
+              filter: drop-shadow(0px 0px 6px var(--color-1));
+            }
+          }
+          &.disabled {
+            border: 3px solid $disabled-button;
+            * {
+              fill: $disabled-button;
+              cursor: not-allowed;
+            }
+            cursor: not-allowed;
+            &:hover {
+              background-color: transparent;
+            }
+          }
+        }
+      }
+      footer {
+        text-align: end;
+        font-size: 20px;
+        vertical-align: bottom;
+        height: max-content;
+      }
+    }
+  }
+
+  .links {
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left: 20px;
+    visibility: hidden;
+    animation: visibilityAnim 0.1s 1.5s forwards;
+    * {
+      cursor: variables.$Pointer;
+      :hover {
+        opacity: 1;
+      }
+    }
+    @for $i from 2 through 4 {
+      :nth-child(#{$i}) {
+        animation-delay: #{$i * 5}s;
+      }
+    }
+    a {
+      animation: floatAnim 30s alternate-reverse infinite;
+      svg {
+        width: 50px;
+        height: 50px;
+        fill: var(--color-1);
+        opacity: 0.9;
+        animation: linkFadeIn 1s 1.5s ease forwards;
+        filter: drop-shadow(0px 0px 6px var(--color-1));
+        transform: translateX(-100px);
+      }
+    }
+  }
+}
+
+@media screen and (min-width: variables.$MD) and (max-width: variables.$LG) {
+  #contact {
+    .no-display.contact-form {
+      width: 64vw;
+    }
+    .get-in-touch-container {
+      margin-left: 4vw;
+      h1,
+      h1.sm {
+        font-size: 62px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: variables.$MD) {
+  #contact {
+    justify-content: space-between;
+    align-items: end;
+    .get-in-touch-container {
+      height: 90vh;
+      width: 50px;
+      h1,
+      h1.sm {
+        font-size: 56px;
+      }
+    }
+    .no-display.contact-form {
+      width: calc(100vw - 155px);
+      .inputs-container {
+        display: block;
+        margin: 3vh 0 0;
+        h2 {
+          font-size: 20px;
+          margin: 10px 0;
+        }
+        div {
+          width: 100%;
+          input {
+            font-size: 16px;
+            ::placeholder {
+              font-size: 16px;
+            }
+          }
+        }
+      }
+      .text-area-container {
+        display: block;
+        div {
+          width: 100%;
+        }
+        h2 {
+          margin: 0 0 15px;
+          font-size: 26px;
+        }
+        textarea {
+          width: calc(100% - 24px);
+          height: 50vh;
+        }
+        .send-button {
+          width: calc(100% - 4px);
+          height: 30px;
+          margin-left: 0;
+          svg {
+            width: 30px;
+            height: 30px;
+          }
+        }
+      }
+      footer {
+        font-size: 14px;
+      }
+    }
+    .links {
+      margin: auto 0;
+      padding: 0px 10px;
+      a svg {
+        width: 35px;
+        height: 35px;
+      }
+    }
+  }
+}
+
+@keyframes slideToTop {
+  from {
+    transform: translateY(100vh);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes getInTouchAnim {
+  from {
+    transform: rotate(-180deg) rotateY(0);
+  }
+  to {
+    transform: rotate(-180deg) rotateY(360deg);
+  }
+}
+
+@keyframes formEntrance {
+  from {
+    transform: translateX(-50vw);
+    clip-path: inset(0 0 0 100%);
+  }
+  to {
+    clip-path: inset(0 0 0 0);
+  }
+}
+
+@keyframes linkFadeIn {
+  from {
+    transform: translateX(-100px);
+  }
+  to {
+    transform: translateX(0px);
+  }
+}
+
+@keyframes formOpacity {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0.9;
+  }
+}
+
+@keyframes floatAnim {
+  0% {
+    transform: translate(3px, 2px);
+  }
+  10% {
+    transform: translate(2px, -2px);
+  }
+  20% {
+    transform: translate(-2px, 2px);
+  }
+  30% {
+    transform: translate(0px, 4px);
+  }
+  40% {
+    transform: translate(2px, 4px);
+  }
+  50% {
+    transform: translate(-3px, 3px);
+  }
+  60% {
+    transform: translate(-3px, 4px);
+  }
+  70% {
+    transform: translate(0px, 0px);
+  }
+  80% {
+    transform: translate(3px, -3px);
+  }
+  90% {
+    transform: translate(4px, 2px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
+}

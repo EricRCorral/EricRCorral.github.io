@@ -1,0 +1,64 @@
+{
+  "es": {
+    "translation": {
+      "sidebar": {
+        "about-me": "Sobre mi",
+        "experience": "Experiencia laboral",
+        "skills": "Habilidades",
+        "contact": "Contacto"
+      },
+      "about-me": {
+        "text_1": "Hola!",
+        "text_2": "Soy Eric, un experimentado desarrollador front end con mas de 3 años de experiencia laboral ubicado en Buenos Aires, Argentina.",
+        "text_3": "He trabajado en proyectos E-commerce y de ciberseguridad con React y muchas otras librerias.",
+        "text_4": "Me encanta crear increibles interfaces de usuario con codigo limpio y entendible. Tambien soy un entusiasta de la IA.",
+        "text_5": "Desplazate hacia abajo para saber mas sobre mi"
+      },
+      "experience": {
+        "role": "Rol",
+        "project": "Proyecto",
+        "task": "Tareas",
+        "stack": "Herramientas",
+        "temperies": {
+          "project": "Paneles de administracion de seguridad de autenticacion",
+          "task_1": "Personalizar mas de 40 componentes reutilizables desde dos librerias",
+          "task_2": "Agregado TLS en desarrollo para que funcionara el flujo completo de Webauthn para agregar distintos dispositivos y metodos como autenticacion.",
+          "task_3": "Codigo QR para agregar TOTP como metodo de autenticacion",
+          "task_4": "Resolucion de errores en general incluso algunos endpoints de la API",
+          "task_5": "Consumo de APIs REST y GraphQL. Creacion de todos los modelos y resolutores para GraphQL",
+          "task_6": "Testing unitario",
+          "task_7": "Revision de codigo",
+          "task_8": "Varias refactorizaciones de codigo",
+          "task_9": "Estimacion de tareas y planeamiento de cuatrimestres",
+          "stack": "React, Typescript, react-router, SaSS, Jest, React Testing Library, Mobx, Material UI, Blueprintjs, Framer motion, Nivo, i18next, react-qr-code, leaflet, Git"
+        },
+        "puzzle": {
+          "project": "Paneles de administracion E-commerce",
+          "task_1": "Desarrollo de funcionalidades y vistas",
+          "task_2": "Resolucion de errores",
+          "task_3": "Consumo de APIs GraphQL",
+          "task_4": "Revision de codigo",
+          "task_5": "Reuniones diarias y semanales",
+          "stack": "React, Typescript, Nextjs, react-router, react-hook-form, Formik, Git"
+        }
+      },
+      "skills": {
+        "frontEnd": "Interfaz",
+        "testing": "Pruebas",
+        "machineLearning": "Aprendizaje automatico",
+        "versionControl": "Control de versiones"
+      },
+      "contact": {
+        "getInTouch": "Ponerse en contacto",
+        "nameLabel": "Nombre",
+        "emailLabel": "Correo electronico",
+        "messageLabel": "Mensaje",
+        "namePlaceholder": "Tu nombre",
+        "emailPlaceholder": "Tu correo electronico",
+        "messagePlaceholder": "Algo que quieras decirme",
+        "footerText": "Con amor y codigo por Eric C."
+      },
+      "job_title": "Desarrollador front end"
+    }
+  }
+}

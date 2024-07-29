@@ -1,0 +1,26 @@
+@keyframes blurOpen {
+  from {
+    filter: blur(20px);
+  }
+  to {
+    filter: blur(0px);
+  }
+}
+
+@keyframes visibilityAnim {
+  from {
+    visibility: hidden;
+  }
+  to {
+    visibility: visible;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
